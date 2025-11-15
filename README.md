@@ -17,7 +17,8 @@ kubectl apply -f service.yaml
 kubectl apply -f ingress.yaml
 
 ## Test the app on a browser
+minikube addons enable ingress
 minikube ip
 vi /etc/hosts
 Add the ip with myapp.local
-search http://myapp.local/ on your browser
+Search http://myapp.local/ on your browser
